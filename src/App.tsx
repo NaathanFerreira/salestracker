@@ -1,12 +1,18 @@
-import './Style.css'
+import { Header } from "./Components/Header";
+import { Sidenav } from "./Components/Sidenav";
+import { Dashboard } from "./Pages/Dashboard";
+import "./Style.css";
 
 function App() {
-
   return (
     <div>
-      <h1>Hello World</h1>
+      <Sidenav />
+      <main>
+        <Header />
+        <Dashboard />
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
